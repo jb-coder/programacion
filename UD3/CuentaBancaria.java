@@ -7,7 +7,7 @@ public class CuentaBancaria {
 	private String numeroCuenta;
 
 	private int saldoActual;
-	//Método Constructor
+	//MÃ©todo Constructor
 	public CuentaBancaria(String cliente, String numeroCuenta, int saldoActual) {
 		this.cliente = cliente;
 		this.numeroCuenta = numeroCuenta;
@@ -29,7 +29,7 @@ public class CuentaBancaria {
 	public void mostrarDatos() {
 		System.out.println("Nombre: " +getCliente()+
 	   			  "\nNumero de la cuenta: " +getnumeroCuenta()+
-	   			  "\nSu saldo disponible es: " +getsaldoActual()+ "€");
+	   			  "\nSu saldo disponible es: " +getsaldoActual()+ "â‚¬");
 		System.out.println();
     }		
 	

@@ -4,7 +4,7 @@ public class Administrativo extends Empleado { //Clase hija de la clase padre Em
 	//Atributos
 	private int numerollamadas;
 	private double tiempototalllamadas;
-	//Método constructor
+	//MÃ©todo constructor
 	public Administrativo(String nombre, String direccion, int telefono, String fecha_nac, double sueldo,
 			int numerollamadas, double tiempoTotalllamadas) {
 		super(nombre, direccion, telefono, fecha_nac, sueldo); //Herencia de atributos de la clase padre
@@ -12,7 +12,7 @@ public class Administrativo extends Empleado { //Clase hija de la clase padre Em
 		this.tiempototalllamadas = tiempoTotalllamadas;
 	}
 	
-	//Métodos getter y setter para obtener y asignar los valores de los atributos
+	//MÃ©todos getter y setter para obtener y asignar los valores de los atributos
 	public int getNumerollamadas() {
 		return numerollamadas;
 	}
@@ -29,7 +29,7 @@ public class Administrativo extends Empleado { //Clase hija de la clase padre Em
 		this.tiempototalllamadas = tiempototalllamadas;
 	}
 	
-	//Método para obtener toda la información por consola de la clase Empleado y Administrativo	
+	//MÃ©todo para obtener toda la informaciÃ³n por consola de la clase Empleado y Administrativo	
 	public void getDatosadm() {
 		getDatosemplado();
 		System.out.println( "Numero de llamadas: " +getNumerollamadas()+

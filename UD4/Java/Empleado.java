@@ -7,7 +7,7 @@ public abstract class Empleado { //Superclase abstracta
 	private int telefono;
 	private String fecha_nac;
 	private double sueldo;
-	//Método constructor
+	//MÃ©todo constructor
 	public Empleado(String nombre, String direccion, int telefono, String fecha_nac, double sueldo) {
 		
 		this.nombre = nombre;
@@ -17,7 +17,7 @@ public abstract class Empleado { //Superclase abstracta
 		this.sueldo = sueldo;
 	}
 
-	//Métodos getter y setter para obtener y asignar los valores de los atributos
+	//MÃ©todos getter y setter para obtener y asignar los valores de los atributos
 	public String getNombre() {
 		return nombre;
 	}
@@ -58,13 +58,13 @@ public abstract class Empleado { //Superclase abstracta
 		this.sueldo = sueldo;
 	}
 	
-	//Método para obtener toda la información por consola de la clase empleado
+	//MÃ©todo para obtener toda la informaciÃ³n por consola de la clase empleado
 	public void getDatosemplado() {
 		System.out.println("Nombre: " +getNombre()+
 	   			  "\nDireccion: " +getDireccion()+
 	   			  "\nTelefono: " +getTelefono()+
 	   			  "\nFecha de nacimiento: " +getFecha_nac()+
-	   			  "\nSueldo: " +getSueldo()+ "€");
+	   			  "\nSueldo: " +getSueldo()+ "â‚¬");
 		System.out.println();
     }	
 

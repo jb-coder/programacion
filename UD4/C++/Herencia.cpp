@@ -7,7 +7,7 @@ class Empleado {
 		float sueldo; //Se estable el modo de acceso protegido en este atributo para luego poder utilizarlo desde la clase hija
 	private:
 		string nombre;
-	public:  //Métodos
+	public:  //MÃ©todos
 		Empleado(float,string);
 		void getSueldo();
 		void getNombre();
@@ -22,34 +22,34 @@ class Informatico : public Empleado { //Se crea la herencia de la clase padre Em
 		Informatico(float,string,int,string);
 		void getInformatico();
 };
-//Método constructor clase Empleado
+//MÃ©todo constructor clase Empleado
 Empleado::Empleado(float _sueldo,string _nombre) {
    	sueldo = _sueldo;
    	nombre = _nombre;
 }
-//Método constructor clase informatico junto con la clase Empleado
+//MÃ©todo constructor clase informatico junto con la clase Empleado
 Informatico::Informatico(float _sueldo,string _nombre,int _plus,string _categoria) : Empleado (_sueldo,_nombre){
 	plus = _plus;
 	categoria = _categoria;
 }
-//Método para obtener sueldo
+//MÃ©todo para obtener sueldo
 void Empleado::getSueldo() {
    cout<<"Mi sueldo es "<<sueldo<< "."<<endl;
 }
-//Método para obtener nombre
+//MÃ©todo para obtener nombre
 void Empleado::getNombre() {
    cout<<"Mi nombre es "<<nombre<< "."<<endl;
 }		
-//Método para mostrar todo de la clase Empleado	
+//MÃ©todo para mostrar todo de la clase Empleado	
 void Empleado::getEmpleado() {
     cout<< "Nombre: "<<nombre<<endl;
     cout<<"Sueldo base: "<<sueldo<< " Euros."<<endl;
 }	
-//Método para obtener de todo de la clase Informatico y empleado
+//MÃ©todo para obtener de todo de la clase Informatico y empleado
 void Informatico::getInformatico() {
 	getEmpleado();
 	cout<<"Plus: "<<plus<<" Euros."<<endl;
-	cout<<"Sueldo total " <<sueldo+plus<< " Euros."<<endl; //Utilizamos el operado aritmético "+" para calcular la suma de sueldo y plus
+	cout<<"Sueldo total " <<sueldo+plus<< " Euros."<<endl; //Utilizamos el operado aritmÃ©tico "+" para calcular la suma de sueldo y plus
 	cout<<"Categoria: "<<categoria<<endl<<endl;
 }
 	

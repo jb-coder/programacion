@@ -34,7 +34,6 @@ public class Arraybidimensional {
 				}
 				
 			}
-			System.out.println("El contenido completo del array es: "+array[filas][columnas]);
 			
 			} catch (Exception e) {			
 		}

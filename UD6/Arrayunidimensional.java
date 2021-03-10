@@ -23,8 +23,6 @@ public class Arrayunidimensional {
 				System.out.println("En la posición "+i+" del array se encuentra el dato: "+array[i]);
 			}
 			
-			System.out.println("El contenido completo del array es: "+array);
-			
 		} catch (Exception e) {
 			
 		}

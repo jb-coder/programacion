@@ -74,7 +74,7 @@ void insertarCola(Nodo *&frente,Nodo *&fin,int n) {
 	cout<<"Elemento "<<n<<" insertado en la cola\n";
 }
 
-//Función para saber si la cola esta vacia
+//FunciÃ³n para saber si la cola esta vacia
 
 bool cola_vacia(Nodo*frente){
 	return(frente ==NULL)?true : false;

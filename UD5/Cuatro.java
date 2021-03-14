@@ -2,34 +2,35 @@
 5. Realice un programa cuatro.java que lea el archivo datos.txt
 y genere un archivo de acceso aleatorio datosAleatorio.txt.
 */
-import java.io.IOException;
-import java.io.FileReader;
-import java.io.RandomAccessFile;
+import java.io.*;
 
-public class Cuatro {
+public class Ejercicio5 {
 	public static void main(String[] args) throws IOException {
 					
 		try {
 			
 			FileReader fr = new FileReader ("C:\\EjerciciosStreams\\datos.txt");
-			fr.read();
+			BufferedReader entrada = new BufferedReader(fr);
 			
-			RandomAccessFile escribe = new RandomAccessFile("C:\\EjerciciosStreams\\datosAleatorio.txt","rw");
-			escribe.seek(escribe.length());
-			String contenido ="";
+			RandomAccessFile Archivo = new RandomAccessFile("C:\\EjerciciosStreams\\datosAleatorio.txt","rw");
+
+			String c;
 			
-			int c;
-			while ((c = fr.read())!=-1) {
-				contenido+=(char)c;
+			while ((c = entrada.readLine())!= null) {
+				//con el método writeChars en cada vuelta del bucle va agregando cada caracter al archivo aleatorio
+				Archivo.writeChars(c);
+				
+				//Condicional para comprobar que el archivo se genera correctamente
+				if((c=entrada.readLine())==null) {
+					System.out.println("El archivo aleatorio se genero correctamente");
+				}
 			}
 			
-			escribe.writeUTF(contenido);
-			escribe.close();
+			Archivo.close();
 			fr.close();
 			
 		}catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
-
 }

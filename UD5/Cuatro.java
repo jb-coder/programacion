@@ -4,7 +4,7 @@ y genere un archivo de acceso aleatorio datosAleatorio.txt.
 */
 import java.io.*;
 
-public class Ejercicio5 {
+public class Cuatro {
 	public static void main(String[] args) throws IOException {
 					
 		try {

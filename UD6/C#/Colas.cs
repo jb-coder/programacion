@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace cchar
 {
-    class Program
+    class Colas
     {
         static void Main(string[] args)
         {

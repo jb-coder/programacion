@@ -11,13 +11,13 @@ namespace cchar
 
             //Agregar elementos a la cola
 
-            foreach (int nums in new int[6] {6, 3, 5, 8, 5, 1}){
+            foreach (int nums in new int[5] {2, 4, 6, 8, 10}){
                 nums.Enqueue(nums);
             }
 
             //Recorriendo la cola
 
-            Console.WriteLine("Recorriendo la cola");
+            Console.WriteLine("recorriendo el Queue");
 
             foreach (int nums in nums){
                 Console.WriteLine(nums);

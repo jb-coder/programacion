@@ -25,7 +25,7 @@ int main()
 {
     Subclase objeto;
     
-    /* Acceso a los miembros heredados de ClaseBase */
+    /* Acceso a los miembros heredados de Subclase */
     objeto.Metodo(); 
     objeto.Metodo();
     return 0;

@@ -33,6 +33,6 @@ public class Km0 extends Producto {
 		System.out.println("Informacion Km0\n"
 				          +"-------------------\n"
 				          +"Numero de kilometros: "+nkm+ " kilometros\n"
-						  +"-------------------\n");
+				          +"-------------------\n");
 	}
 }

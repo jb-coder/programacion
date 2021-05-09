@@ -54,7 +54,7 @@ public class Jdbc_UD8 {
 					+ " values ('3456KYZ','Mazda','CX-3','SUV')";
 			
 			
-		// -CREAMOS LAS VARIABLES CON LAS SETENCIAS SQL
+		// -CREAMOS LAS VARIABLES CON LAS SENTENCIAS SQL
 			
 			
 			String instruccionSql = "UPDATE EMPLEADOS SET SUELDO = SUELDO*1.05";
@@ -104,7 +104,8 @@ public class Jdbc_UD8 {
 			}
 			
 			while(miResultset3.next()) {
-
+				
+				System.out.println("Empleados Almeria");
 				System.out.println(miResultset3.getString("NOMBRE")+ " "+miResultset3.getString("SUELDO"));
 
 			}
